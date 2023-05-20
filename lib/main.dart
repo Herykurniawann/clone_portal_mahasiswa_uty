@@ -1,3 +1,4 @@
+import 'package:clone_portal_uty/clone_portal/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       // Definisikan page yang akan ditampilkan pertama saat aplikasi dijalankan
-      home: Home(),
+      home: Login(),
     );
   }
 }
