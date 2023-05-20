@@ -1,13 +1,11 @@
 import 'package:clone_portal_uty/clone_portal/home.dart';
 import 'package:clone_portal_uty/clone_portal/info.dart';
 import 'package:clone_portal_uty/clone_portal/jadwal.dart';
-import 'package:clone_portal_uty/clone_portal/profile.dart';
+import 'package:clone_portal_uty/clone_portal/presensi.dart';
 import 'package:flutter/material.dart';
 
-import 'presensi.dart';
-
-class Template extends StatelessWidget {
-  const Template({Key? key}) : super(key: key);
+class Profile extends StatelessWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +23,7 @@ class Template extends StatelessWidget {
           ),
           Container(
               // border top
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               height: 60,
               color: Colors.black,
               child: Row(
@@ -47,10 +45,9 @@ class Template extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.home,
-                            color: Colors.lightBlueAccent,
+                            color: Colors.white,
                           ),
-                          Text('Home',
-                              style: TextStyle(color: Colors.lightBlueAccent)),
+                          Text('Home', style: TextStyle(color: Colors.white)),
                         ],
                       ),
                     ),
@@ -130,6 +127,9 @@ class Template extends StatelessWidget {
                   ),
                   Expanded(child: Container()),
                   ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.black)),
                     onPressed: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
@@ -142,9 +142,10 @@ class Template extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.person,
-                            color: Colors.white,
+                            color: Colors.lightBlueAccent,
                           ),
-                          Text('Profile', style: TextStyle(color: Colors.white))
+                          Text('Profile',
+                              style: TextStyle(color: Colors.lightBlueAccent))
                         ],
                       ),
                     ),
