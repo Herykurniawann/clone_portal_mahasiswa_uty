@@ -1,0 +1,18 @@
+items: imgList
+            .map((item) => Container(
+                  child: Center(
+                      child:
+                          Image.network(item, fit: BoxFit.cover, width: 1000)),
+                ))
+            .toList(),
+
+
+
+thats how to use img slider
+
+
+
+
+
+
+color: Color.fromARGB(48, 255, 255, 255),
