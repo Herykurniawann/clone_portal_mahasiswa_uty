@@ -13,12 +13,347 @@ class Profile extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            child: ListView(
-              children: [
-                SizedBox(
-                  height: 20,
-                ),
-              ],
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              color: Colors.black,
+              child: ListView(
+                children: [
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Text(
+                    "Akun Saya",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(38, 255, 255, 255),
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Icon(
+                                Icons.person,
+                                color: Colors.black,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Hery Kurniawan",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    )),
+                                Text("5220411138  INFORMATIKA",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    )),
+                              ],
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              "Status Mahasiswa",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Text("Aktif",
+                                style: TextStyle(
+                                  color: Colors.greenAccent,
+                                  fontSize: 16,
+                                )),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(38, 255, 255, 255),
+                        borderRadius: BorderRadius.circular(10)),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.perm_identity_rounded,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "KTM Elektronik",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.email_outlined,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "Email Student",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Text("DOSEN PEMBIMBING AKADEMIK",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                        )),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(38, 255, 255, 255),
+                        borderRadius: BorderRadius.circular(10)),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.perm_identity_rounded,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "Suyud Widiono, S.Pd.,M.Kom",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.email_outlined,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "suyud.widiono@staff.uty.ac.id",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.phone_android_outlined,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "0818463***",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Text("PRIVASI & KEAMANAN",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                        )),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: const Color.fromARGB(38, 255, 255, 255),
+                        borderRadius: BorderRadius.circular(10)),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.password_outlined,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "Ganti Kata Sandi",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.confirmation_number_outlined,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "Autentikasi Akun",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.security_rounded,
+                              color: Colors.lightBlue,
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Text(
+                              "Privasi & Keamanan",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                            ),
+                            Expanded(child: Container()),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Container(
