@@ -78,16 +78,22 @@ class Presensi extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Colors.lightBlueAccent,
+                      color: Colors.blueAccent,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.blueAccent)),
                         onPressed: null,
                         child: Text(
                           "Input QR Code",
                           style: TextStyle(color: Colors.white),
                         )),
-                  )
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
                 ],
               ),
             ),
