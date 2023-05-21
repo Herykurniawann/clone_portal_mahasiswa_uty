@@ -2,8 +2,6 @@ import 'package:clone_portal_uty/clone_portal/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'clone_portal/home.dart';
-
 void main() {
   runApp(const MyApp());
 }

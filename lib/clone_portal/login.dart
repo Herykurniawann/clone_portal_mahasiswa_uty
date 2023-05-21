@@ -10,7 +10,6 @@ class Login extends StatefulWidget {
 
 class _Login extends State<Login> {
   static const Color blackColor = Color(0xFF1c1b20);
-  static const Color orangeColor = Color(0xFFff8b39);
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
